@@ -35,6 +35,6 @@ email.generate_email()
 if email.check_email():
     email_data = email.get_email()
     print("Subject:", email.subject)
-    print("Body:", email_data["textBody"])
+    print("Body:", email.textBody)
 else:
     print("No new emails.")
